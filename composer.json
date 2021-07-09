@@ -1,0 +1,40 @@
+{
+  "name": "metro-markets/feature-flag-bundle",
+  "description": "Metro Markets Symfony Feature flag Bundle for quickly integration with configcat and other providers.",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MetroMarkets\\FFBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MetroMarkets\\FFBundle\\Tests\\": "Tests"
+    }
+  },
+  "require": {
+    "php": " ^8.0 || ^7.3",
+    "symfony/config": "^5.0 || ^4.2",
+    "symfony/dependency-injection": "^5.0 || ^4.2",
+    "symfony/http-kernel": "^5.1.5 || ^4.2",
+    "symfony/yaml": "^5.0 || ^4.2",
+    "symfony/cache": "^5.0 || ^4.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0 || ^8.0 || ^7.0",
+    "configcat/configcat-client": "^5.0 || ^4.0"
+  },
+  "suggest": {
+    "configcat/configcat-client": "Required whenever provider is configcat",
+    "guzzlehttp/guzzle": "Required whenever provider is rest"
+  },
+  "authors": [
+    {
+      "name": "Leo Beal",
+      "email": "leonardobeal@gmail.com"
+    }
+  ]
+}

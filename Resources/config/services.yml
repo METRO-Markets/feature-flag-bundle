@@ -1,0 +1,9 @@
+services:
+  MetroMarkets\FFBundle\FeatureFlagService:
+    public: true
+
+  MetroMarkets\FFBundle\Providers\ConfigCatProvider:
+  MetroMarkets\FFBundle\Providers\RandomProvider: ~
+  MetroMarkets\FFBundle\Providers\RestProvider: ~
+  MetroMarkets\FFBundle\Providers\FalseProvider: ~
+
